@@ -26,6 +26,13 @@ Parameters
 Replace ``paymentId`` in the endpoint URL by the payment's ID, and replace ``id`` by the capture's ID. For example:
 ``/v2/payments/tr_7UhSN1zuXS/captures/re_4qqhO89gsT``.
 
+Embedding of related resources
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This endpoint allows for embedding additional information by appending the following values via the ``embed``
+query string parameter.
+
+* ``payment`` Include the :doc:`payment </reference/v2/payments-api/get-payment>` the capture was issued for.
+
 Mollie Connect/OAuth parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If you're creating an app with :doc:`Mollie Connect/OAuth </oauth/overview>`, the ``testmode`` parameter is also
